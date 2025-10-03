@@ -1,5 +1,5 @@
-'''
-marketplace/
+
+'''marketplace/
 ├── manage.py
 ├── requirements.txt
 ├── .env
@@ -48,5 +48,4 @@ marketplace/
 │           └── payment_success.html
 │
 └── static/
-    └── css/
-'''
+    └── css/'''
