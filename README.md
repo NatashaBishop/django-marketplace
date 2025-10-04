@@ -1,4 +1,4 @@
-# learning to do a marketplace 
+# marketplace with Django
 with the following stack: Django (Python framework), some JS framework on the front end, mySQL or Postgres, looking for a reliable Posrgres hosting at the moment  
 ## a standart file/folder structure for marketplace with Django 
 ```marketplace/  
