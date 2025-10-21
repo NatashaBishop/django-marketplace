@@ -1,7 +1,8 @@
 # marketplace with Django
 with the following stack: Django (Python framework), some JS framework on the front end, mySQL or Postgres, looking for a reliable Posrgres hosting at the moment  
 ## a standart file/folder structure for marketplace with Django 
-```marketplace/  
+```
+marketplace/  
 ├── manage.py  
 ├── requirements.txt  
 ├── .env  
@@ -82,7 +83,8 @@ with the following stack: Django (Python framework), some JS framework on the fr
     ├── __init__.py  
     ├── test_accounts.py  
     ├── test_products.py  
-    └── test_orders.py  ```
+    └── test_orders.py  
+```
 
 ## Key Notes:
 apps/ → all domain-specific Django apps live here (accounts, products, orders, payments, etc.).
