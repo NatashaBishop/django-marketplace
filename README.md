@@ -89,4 +89,11 @@ apps/ → all domain-specific Django apps live here (accounts, products, orders,
 core/ → for shared code/templates like base.html, utilities, middlewares, signals.
 static/ vs media/ → static files vs user-uploaded files (e.g., product images).
 tests/ → keep organized per domain or inside each app as tests/.
-settings.py → can be split into settings/ module with base.py, dev.py, prod.py for better environment separation.
+settings.py → can be split into settings/ module with base.py, dev.py, prod.py for better environment separation.  
+
+## How to run.  
+Bash  
+python manage.py makemigrations  
+python manage.py migrate  
+python manage.py runserver  
+
