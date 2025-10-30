@@ -92,11 +92,7 @@ marketplace/
 Highlights  
 
 - api/ folders in each app → contain DRF serializers.py and views.py (isolated from web views).  
-
 - urls_api.py per app → registers API endpoints via DRF DefaultRouter.  
-
- -marketplace/settings/ split → base.py, dev.py, prod.py for environment-specific configurations.  
-
- -HTML templates remain in app-level /templates/ directories for web rendering.  
-
+ - marketplace/settings/ split → base.py, dev.py, prod.py for environment-specific configurations.  
+ - HTML templates remain in app-level /templates/ directories for web rendering.  
 - tests/ directory provides project-wide test coverage (you can also keep tests inside each app).  
