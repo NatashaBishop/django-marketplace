@@ -93,6 +93,16 @@ static/ vs media/ → static files vs user-uploaded files (e.g., product images)
 tests/ → keep organized per domain or inside each app as tests/.  
 settings.py → can be split into settings/ module with base.py, dev.py, prod.py for better environment separation.    
 
+## Test API  
+```
+Run:
+python manage.py runserver
+``` 
+Then visit these API endpoints:  
+- http://127.0.0.1:8000/api/products/  
+- http://127.0.0.1:8000/api/orders/  
+- http://127.0.0.1:8000/api/payments/  
+
 ## How to run  
 ```
 Bash  
