@@ -1,3 +1,4 @@
+This structure supports both web views (HTML) and API endpoints (JSON) cleanly — ideal for hybrid Django + SPA/mobile setups.
 ```
 marketplace/
 ├── manage.py
@@ -88,6 +89,7 @@ marketplace/
     ├── test_products.py
     ├── test_orders.py
     └── test_payments.py
+
 ```
 Highlights  
 
