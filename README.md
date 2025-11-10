@@ -6,7 +6,9 @@ This directory contains:
 - Split settings (base/dev/prod)
 - DRF setup + dependencies in requirements.txt
 - Ready-to-run manage.py
-## Test API  
+- All the files needed to run the project functionality
+- README file
+## How To Test API  
 ```
 Run:
 python manage.py runserver
@@ -16,7 +18,7 @@ Then visit these API endpoints:
 - http://127.0.0.1:8000/api/orders/  
 - http://127.0.0.1:8000/api/payments/  
 
-## How to run  
+## How to run project  
 clone barter-marketplace directory to your machine
 ```
 Bash  
