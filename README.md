@@ -21,10 +21,11 @@ Then visit these API endpoints:
 ## How to run project  
 Clone or download barter-marketplace directory to your machine  
 Quick start after download:  
+unzip barter-marketplace-full.zip  
 
 ```
 Bash  
-unzip barter-marketplace-full.zip  
+
 cd barter-marketplace  
 python -m venv .venv  
 source .venv/bin/activate  
