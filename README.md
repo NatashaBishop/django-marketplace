@@ -19,13 +19,21 @@ Then visit these API endpoints:
 - http://127.0.0.1:8000/api/payments/  
 
 ## How to run project  
-clone barter-marketplace directory to your machine
+Clone or download barter-marketplace directory to your machine
+Quick start after download:
+
 ```
 Bash  
-cd barter-marketplace
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+unzip barter-marketplace-full.zip  
+cd barter-marketplace  
+python -m venv .venv  
+source .venv/bin/activate  
+pip install -r requirements.txt  
+# create DB & user in PostgreSQL per .env, or change .env to use local settings  
+python manage.py makemigrations  
+python manage.py migrate  
+python manage.py createsuperuser  
+python manage.py runserver  
 ``` 
 
 
