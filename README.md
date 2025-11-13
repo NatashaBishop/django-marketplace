@@ -19,8 +19,8 @@ Then visit these API endpoints:
 - http://127.0.0.1:8000/api/payments/  
 
 ## How to run project  
-Clone or download barter-marketplace directory to your machine
-Quick start after download:
+Clone or download barter-marketplace directory to your machine  
+Quick start after download:  
 
 ```
 Bash  
