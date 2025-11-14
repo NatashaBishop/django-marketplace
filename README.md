@@ -1,5 +1,5 @@
 # marketplace with Django
-with the following stack: Django (Python framework), some JS framework on the front end, PostgreSQL (looking for a reliable Posrgres hosting at the moment)  
+Building market place with the following stack: Django (Python framework), some JS framework on the front end, PostgreSQL (looking for a reliable Posrgres hosting at the moment)  
 This directory contains:  
 - Complete project folder structure
 - Configured PostgreSQL .env
