@@ -24,17 +24,28 @@ Quick start after download:
 unzip barter-marketplace-full.zip  
 
 ```
+# cd barter-marketplace
 Bash  
 
-cd barter-marketplace  
 python -m venv .venv  
 source .venv/bin/activate  
 pip install -r requirements.txt  
 # create DB & user in PostgreSQL per .env, or change .env to use local settings  
+# Run migrations and create a superuser:  
 python manage.py makemigrations  
 python manage.py migrate  
 python manage.py createsuperuser  
 python manage.py runserver  
 ``` 
-
-
+Test the API endpoints: 
+- POST /api/auth/register/ with JSON:
+```
+{
+  "username": "alice",
+  "email": "alice@example.com",
+  "password": "SuperSecret123!",
+  "password2": "SuperSecret123!"
+}
+```
+- POST /api/auth/token/ with username+password to get access & refresh tokens.  
+- POST /api/auth/token/refresh/ to refresh access token.  
