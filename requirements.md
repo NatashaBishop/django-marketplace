@@ -1,6 +1,6 @@
 
-#this file should be named requirements.txt - named with .md for github version
-#shell
+#this file should be named requirements.txt - named with .md for github version  
+#shell  
 ```ruby
 Django>=5.0
 djangorestframework>=3.15
