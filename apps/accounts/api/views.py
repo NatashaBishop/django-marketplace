@@ -3,6 +3,8 @@ from rest_framework.response import Response
 from .serializers import RegisterSerializer
 from django.contrib.auth import get_user_model
 from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework.views import APIView
+from rest_framework.permissions import IsAuthenticated
 
 User = get_user_model()
 
@@ -31,3 +33,19 @@ class RegisterView(generics.CreateAPIView):
             "tokens": tokens
         }
         return Response(data, status=status.HTTP_201_CREATED)
+
+class LogoutView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def post(self, request):
+        """
+        Blacklist the provided refresh token.
+        Expected payload: {"refresh": "<refresh_token>"}
+        """
+        try:
+            refresh_token = request.data.get("refresh")
+            token = RefreshToken(refresh_token)
+            token.blacklist()
+            return Response(status=status.HTTP_205_RESET_CONTENT)
+        except Exception as e:
+            return Response({"detail": "Invalid token."}, status=status.HTTP_400_BAD_REQUEST)
