@@ -29,8 +29,7 @@ pytest -q
 # Run:  
 python manage.py runserver  
 ```
-#########################################  
-# ChatGPT version of Quick start:  
+##### ChatGPT version of Quick start: ######  
 ```ruby
 #bash
 unzip barter-marketplace-full-runable.zip
