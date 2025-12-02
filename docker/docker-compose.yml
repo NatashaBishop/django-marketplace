@@ -1,0 +1,35 @@
+
+version: "3.9"
+
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      DEBUG: "True"
+      DJANGO_SECRET_KEY: "changeme"
+      DB_NAME: marketplace_db
+      DB_USER: marketplace_user
+      DB_PASSWORD: supersecret
+      DB_HOST: db
+      DB_PORT: 5432
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: marketplace_db
+      POSTGRES_USER: marketplace_user
+      POSTGRES_PASSWORD: supersecret
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
