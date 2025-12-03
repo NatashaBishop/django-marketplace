@@ -16,6 +16,20 @@
 - Runs Django migrations automatically  
 - Starts the server  
 
+Despite I have doker files in a separate folder here, it is better to place all 3 files in the root:  
+```
+barter-marketplace/  
+│  
+├── Dockerfile  
+├── docker-compose.yml  
+├── entrypoint.sh  
+├── manage.py  
+├── marketplace/  
+├── apps/  
+├── requirements.txt  
+├── .env  
+└── ...  
+```
 # To run this app in Docker:  
 ```ruby
 unzip barter-marketplace-docker.zip
