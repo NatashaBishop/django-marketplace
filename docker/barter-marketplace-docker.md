@@ -30,12 +30,16 @@ barter-marketplace/
 ├── .env  
 └── ...  
 ```
+This is why:  
+✔ Clean  
+✔ Standard Django deployment layout  
+✔ Works with Render, Railway, AWS, DigitalOcean, etc.  
 # To run this app in Docker:  
 ```ruby
 unzip barter-marketplace-docker.zip
 docker compose up --build
 ```
-The app will be available at:
-👉 http://localhost:8000
-Postgres will be running at:
-👉 localhost:5433 (mapped to container’s 5432)
+The app will be available at:  
+👉 http://localhost:8000  
+Postgres will be running at:  
+👉 localhost:5433 (mapped to container’s 5432)  
