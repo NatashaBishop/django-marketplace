@@ -7,7 +7,19 @@ This directory contains:
 - DRF setup + dependencies in requirements.txt
 - Ready-to-run manage.py
 - All the files needed to run the project functionality
-- README file
+- Project description
+- Project file structure
+
+## What’s inside (ready-to-run):
+- Full Django project (split settings: base, dev, prod)
+- apps/ with accounts, products, orders, payments
+- Models, admin, views, urls, templates
+- DRF API (api/serializers.py, api/views.py, urls_api.py)
+- JWT auth (registration, token obtain/refresh) + token blacklisting logout
+- .env example configured for PostgreSQL
+- requirements.txt including simplejwt, pytest, and pytest-django
+- pytest.ini and tests for auth flows
+
 ## How To Test API  
 ```
 Run:
