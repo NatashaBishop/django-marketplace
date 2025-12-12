@@ -36,7 +36,9 @@ This is why:
 ✔ Works with Render, Railway, AWS, DigitalOcean, etc.  
 # To run this app in Docker:  
 ```ruby
-unzip barter-marketplace-docker.zip
+Quick start (Docker)
+unzip barter-marketplace-unified.zip
+cd barter-marketplace-unified
 docker compose up --build
 ```
 The app will be available at:  
