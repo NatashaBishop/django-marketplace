@@ -35,8 +35,8 @@ This is why:
 ✔ Standard Django deployment layout  
 ✔ Works with Render, Railway, AWS, DigitalOcean, etc.  
 # To run this app in Docker:  
+Quick start (Docker)  
 ```ruby
-Quick start (Docker)
 unzip barter-marketplace-unified.zip
 cd barter-marketplace-unified
 docker compose up --build
