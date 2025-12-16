@@ -13,3 +13,16 @@ Full production-ready Docker setup with:
 ## Ready in 2 containers (recommended)  
 nginx (public-facing, serves static files + proxies requests)  
 web (Django + Gunicorn)  
+## Folder structure:  
+```
+barter-marketplace/
+│
+├── Dockerfile            ← used for production (Gunicorn)
+├── docker-compose.yml    ← original dev compose
+├── docker-compose.prod.yml   ← NEW (nginx + gunicorn)
+├── nginx/
+│   └── nginx.conf        ← NEW
+├── entrypoint.sh         ← dev
+└── entrypoint.prod.sh    ← NEW (collectstatic + gunicorn)
+
+```
