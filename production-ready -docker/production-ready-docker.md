@@ -15,6 +15,8 @@ nginx (public-facing, serves static files + proxies requests)
 web (Django + Gunicorn)  
 ## Folder structure:  
 ```
+sql
+
 barter-marketplace/
 │
 ├── Dockerfile            ← used for production (Gunicorn)
