@@ -1,4 +1,4 @@
-```
+````ruby
 # bash 
 
 #!/bin/sh
@@ -11,4 +11,4 @@ echo "Collecting static files..."
 python manage.py collectstatic --noinput
 
 exec gunicorn marketplace.wsgi:application --bind 0.0.0.0:8000 --workers 3
-```
+````
