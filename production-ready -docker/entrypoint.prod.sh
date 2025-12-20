@@ -1,4 +1,4 @@
-# bash 
+# bash (project root)
 
 #!/bin/sh
 set -e
