@@ -1,5 +1,5 @@
 # bash 
-#we are in in project root, but working i /app derectory
+#we are in in project root, but working in enother /app derectory
 
 FROM python:3.12-slim
 
