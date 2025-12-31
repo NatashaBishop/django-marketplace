@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt /app/ # save copy of requirements.txt to app directory
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt # reproduce a Python environment in Docker.
 
 COPY . /app
 
