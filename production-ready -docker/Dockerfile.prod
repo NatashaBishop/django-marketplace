@@ -20,6 +20,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY requirements.txt /app/ # save copy of requirements.txt to app directory
 RUN pip install --no-cache-dir -r requirements.txt # reproduce a Python environment in Docker.
+#"--no-cache-dir" This is the important part for Docker. It tells pip:
+#Do not store downloaded package files in pip’s cache.
 
 COPY . /app
 
