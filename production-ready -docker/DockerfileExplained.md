@@ -11,7 +11,7 @@ WORKDIR /app
 #from this point onward, all commands will run inside the folder /app
 #in case there is no app directory, it will be created
 
-# Installs only the explicitly listed packages, without pulling in optional recommended packages, which keeps the image smaller and avoids unnecessary dependencies: 
+#Installs only the explicitly listed packages, without pulling in optional recommended packages, which keeps the image smaller and avoids unnecessary dependencies: 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libpq-dev \
