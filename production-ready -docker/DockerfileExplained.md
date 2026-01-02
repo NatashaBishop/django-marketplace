@@ -1,7 +1,7 @@
 # bash 
-#we are in in project root, but working in enother /app derectory
+#we are in the project root, but working in enother /app derectory
 
-FROM python:3.12-slim
+```FROM python:3.12-slim```
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
@@ -22,6 +22,7 @@ COPY requirements.txt /app/ # save copy of requirements.txt to app directory
 RUN pip install --no-cache-dir -r requirements.txt # reproduce a Python environment in Docker.
 #"--no-cache-dir" This is the important part for Docker. It tells pip:
 #Do not store downloaded package files in pip’s cache.
+#Using --no-cache-dir keeps the image much smaller and cleaner (cache can add tens or hundreds of MB to your final image)
 
 COPY . /app
 
