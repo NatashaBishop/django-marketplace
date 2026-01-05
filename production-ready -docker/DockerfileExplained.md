@@ -9,8 +9,7 @@ ENV PYTHONUNBUFFERED=1
 # we are in the project root, but working in enother /app derectory  
 set the current working directory inside the container to /app:
 ```WORKDIR /app ```
-from this point onward, all commands will run inside the folder /app  
-in case there is no app directory, it will be created 
+from this point onward, all commands will run inside the folder /app, in case there is no app directory, it will be created  
 
 #Installs only the explicitly listed packages, without pulling in optional recommended packages, which keeps the image smaller and avoids unnecessary dependencies: 
 ```
