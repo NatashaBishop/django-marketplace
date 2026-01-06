@@ -23,11 +23,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ```
 COPY requirements.txt /app/
 ```
-#"--no-cache-dir" This is the important part for Docker. It tells pip:  
+# "--no-cache-dir" This is the important part for Docker. 
+It tells pip:  
 Do not store downloaded package files in pip’s cache.  
-Using --no-cache-dir keeps the image much smaller and cleaner (cache can add tens or hundreds of MB to your final image)  
+Using --no-cache-dir keeps the image much smaller and cleaner (cache can add tens or hundreds of MB to your final image).  
+It reproduces a Python environment in Docker:  
 ```
-RUN pip install --no-cache-dir -r requirements.txt # reproduce a Python environment in Docker.
+RUN pip install --no-cache-dir -r requirements.txt 
 ```
 
 
