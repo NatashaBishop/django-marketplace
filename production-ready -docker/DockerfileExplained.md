@@ -17,9 +17,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpq-dev \
     gettext \
 ```
+```
   && rm -rf /var/lib/apt/lists/*
 ```
-# save copy of requirements.txt to app directory
+save copy of requirements.txt to app directory:
 ```
 COPY requirements.txt /app/
 ```
