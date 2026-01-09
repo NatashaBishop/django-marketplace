@@ -16,9 +16,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libpq-dev \
     gettext \
+    && rm -rf /var/lib/apt/lists/*  
 ```
+Step-by-step explanation for the last line:
+
+    && — chains commands together. The second runs only if the first succeeds.
+    rm -rf — forcefully removes files/directories (-r = recursive, -f = force).
+    /var/lib/apt/lists/* — this directory stores cached metadata about available packages (downloaded during apt-get update).
 ```
-  && rm -rf /var/lib/apt/lists/*
+
 ```
 save copy of requirements.txt to app directory:
 ```
