@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     gettext \
     && rm -rf /var/lib/apt/lists/*  
 ```
-Step-by-step explanation for the last line:  
+Step-by-step explanation for the last line (&& rm -rf /var/lib/apt/lists/* ):  
 - && — chains commands together. The second runs only if the first succeeds.  
 - rm -rf — forcefully removes files/directories (-r = recursive, -f = force).  
 - /var/lib/apt/lists/* — this directory stores cached metadata about available packages (downloaded during apt-get update).  
