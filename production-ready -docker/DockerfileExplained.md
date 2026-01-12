@@ -23,10 +23,8 @@ Step-by-step explanation for the last line (&& rm -rf /var/lib/apt/lists/* ):
 - rm -rf — forcefully removes files/directories (-r = recursive, -f = force).  
 - /var/lib/apt/lists/* — this directory stores cached metadata about available packages (downloaded during apt-get update).  
 As a result: It deletes the package list cache after installation is complete.  
-```
 
-```
-save copy of requirements.txt to app directory:
+saving copy of requirements.txt to app directory:  
 ```
 COPY requirements.txt /app/
 ```
