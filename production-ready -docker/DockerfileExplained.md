@@ -38,8 +38,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 ```
  It copies everything in my current build (the directory where I run docker build) into the /app directory inside the container image:
 ```
-COPY . /app
 
+COPY . /app
+```
+
+```
 RUN useradd -m appuser && chown -R appuser /app
 USER appuser
 
