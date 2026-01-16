@@ -52,6 +52,7 @@ what this does:
 - useradd -m appuser → creates a new user with a home directory
 - chown -R appuser /app → gives that user ownership of the application files
 - USER appuser → ensures the container runs as a non-root user (best practice for security)
+- USER appuser → ensures the container runs as a non-root user (best practice for security)
 ```
 EXPOSE 8000
 CMD ["gunicorn", "marketplace.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3"]
