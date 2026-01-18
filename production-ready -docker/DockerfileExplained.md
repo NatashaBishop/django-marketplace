@@ -55,5 +55,9 @@ what this does:
 - USER appuser → ensures the container runs as a non-root user (best practice for security)
 ```
 EXPOSE 8000
+```
+#Expose port 8000 for the application and start the Django app  
+#using Gunicorn, binding to all interfaces with 3 worker processes  
+```
 CMD ["gunicorn", "marketplace.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3"]
 ```
