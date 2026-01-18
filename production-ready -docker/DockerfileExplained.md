@@ -54,7 +54,7 @@ what this does:
 - USER appuser → ensures the container runs as a non-root user (best practice for security)
 - USER appuser → ensures the container runs as a non-root user (best practice for security)
 ```
-EXPOSE 8000
+EXPOSE 8000 #documents that the container listens on port 8000
 ```
 #Expose port 8000 for the application and start the Django app  
 #using Gunicorn, binding to all interfaces with 3 worker processes  
