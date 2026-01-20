@@ -62,3 +62,4 @@ EXPOSE 8000 #documents that the container listens on port 8000
 CMD ["gunicorn", "marketplace.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3"]
 ```
 #gunicorn marketplace.wsgi:application → runs the Django WSGI app
+#change 8000 to the port in use
