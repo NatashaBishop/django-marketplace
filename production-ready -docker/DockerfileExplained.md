@@ -1,4 +1,4 @@
-# bash 
+# Run bash commands
 
 ```
 FROM python:3.12-slim
