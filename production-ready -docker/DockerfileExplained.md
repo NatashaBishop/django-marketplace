@@ -64,4 +64,4 @@ CMD ["gunicorn", "marketplace.wsgi:application", "--bind", "0.0.0.0:8000", "--wo
 - In a Dockerfile, CMD defines the default command that runs when the container starts
 - gunicorn marketplace.wsgi:application → runs the Django WSGI app
 - change 8000 to the port in use
-- "--workers", "3" → run 3 worker processes
+- This bit runs 3 worker processes: "--workers", "3"
