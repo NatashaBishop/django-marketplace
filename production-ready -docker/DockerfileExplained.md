@@ -6,7 +6,7 @@ FROM python:3.12-slim
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 ```
-We are in the project root, but working in enother /app derectory  
+We are in the project root, but working in another /app derectory  
 Setting the current working directory inside the container to /app:  
 ```WORKDIR /app ```
 from this point onward, all commands will run inside the folder /app, in case there is no app directory, it will be created  
