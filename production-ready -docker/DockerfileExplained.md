@@ -1,4 +1,5 @@
 # Run bash commands
+"slim" is a stripped-down version of the Python image that:  
 
 ```
 FROM python:3.12-slim
