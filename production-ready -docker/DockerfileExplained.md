@@ -1,6 +1,8 @@
 # Run bash commands
 "slim" is a stripped-down version of the Python image that:  
-
+- Is based on a minimal Debian OS (not Alpine, but close in spirit)
+- Removes a lot of extra packages, docs, and build tools
+- Results in a much smaller image size
 ```
 FROM python:3.12-slim
 
