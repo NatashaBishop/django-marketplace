@@ -8,6 +8,13 @@ FROM python:3.12-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
+These two lines are Dockerfile environment variable settings, and they control Python’s runtime behavior inside the container:
+
+    ENV PYTHONDONTWRITEBYTECODE=1  
+    This tells Python not to generate .pyc files (compiled bytecode) when importing modules. It keeps the container filesystem cleaner and avoids unnecessary writes, which is useful in Docker where persistence of those files isn’t needed.
+
+    ENV PYTHONUNBUFFERED=1  
+    This forces Python to run in unbuffered mode, meaning output is written directly to the terminal or log without being buffered. In practice, it ensures that logs appear immediately in Docker’s output stream instead of being delayed, which is important for debugging and monitoring.
 ```
 We are in the project root, but working in another /app derectory  
 Setting the current working directory inside the container to /app:  
